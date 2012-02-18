@@ -1,0 +1,12 @@
+{
+  "author": "Karl Seguin <karl@openmymind.net> (http://openmymind.net/)",
+  "name": "edagom",
+  "version": "0.0.1",
+  "engines": { "node": ">= v0.6.9" },
+  "dependencies": {
+    "connect": "= 1.8.4",
+    "node-model": "git://github.com/karlseguin/node-model.git",
+    "redis": "= 0.7.1",
+    "hashlib": "git://github.com/brainfucker/hashlib.git#b9f61ef3d8898d7fd7b36f64ba024c8ab2e39dc7"
+  }
+}
