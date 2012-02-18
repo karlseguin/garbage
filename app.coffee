@@ -1,6 +1,8 @@
-redis = require('./src/redis')
+source = if process.argv[1] == 'app.coffee' then './src/' else './lib/'
+
+redis = require(source + 'redis')
+config = require(source + 'config')
 cluster = require('cluster')
-config = require('./src/config')
 cpus = config.cluster.numberOfCpus
 
 if cpus == 0
@@ -15,4 +17,4 @@ if cluster.isMaster
 else
   redis.initialize (err) ->
     return console.log(err) if err?
-    require('./src/server')
+    require(source + 'server')
