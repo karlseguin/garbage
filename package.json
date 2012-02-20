@@ -1,7 +1,7 @@
 {
   "author": "Karl Seguin <karl@openmymind.net> (http://openmymind.net/)",
   "name": "edagom",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": { "node": ">= v0.6.9" },
   "dependencies": {
     "connect": "= 1.8.4",
