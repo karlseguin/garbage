@@ -1,4 +1,4 @@
-source = if process.argv[1] == 'app.coffee' then './src/' else './lib/'
+source = if /app\.coffee$/.test(process.argv[1]) then './src/' else './lib/'
 
 redis = require(source + 'redis')
 config = require(source + 'config')
